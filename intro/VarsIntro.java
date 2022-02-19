@@ -4,9 +4,9 @@ public class VarsIntro {
         int a = 10;
         int b = 5;
         int sum = a + b;
-        // System.out.println(sum);
+        System.out.println(sum);
         int diff = a - b;
-        // System.out.println(diff);
+        System.out.println(diff);
         int mul = a * b;
         System.out.println(mul);
 
