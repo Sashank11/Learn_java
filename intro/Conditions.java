@@ -11,13 +11,25 @@ public class Conditions {
         // else{
         //     System.out.println("Not Adult");
         // }
-        int x = sc.nextInt();
+        // int x = sc.nextInt();
+        // if (x % 2 == 0 ){
+        //     System.out.println("Even");
+        // }
+        // else{
+        //     System.out.println("Odd");
+        // }
+
+        int a = sc.nextInt();
+        int b = sc.nextInt();
         sc.close();
-        if (x % 2 == 0 ){
-            System.out.println("Even");
+        if( a == b){
+            System.out.println("Equal");
+        }
+        else if(a > b){
+            System.out.println("A is greater");
         }
         else{
-            System.out.println("Odd");
+            System.out.println("B is greater");
         }
     }
 }
