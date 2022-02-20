@@ -31,17 +31,26 @@ public class Conditions {
         // else{
         //     System.out.println("B is greater");
         // }
-        int button = sc.nextInt();
+        String op = sc.nextLine();
+        int a = sc.nextInt();
+        int b = sc.nextInt();
         sc.close();
-        switch (button) {
-            case 1:
-                System.out.println("Hello");
+
+        switch (op) {
+            case "+":
+                System.out.println(a+b);
                 break;
-            case 2:
-                System.out.println("Namaste");
+            case "-":
+                System.out.println(a-b);
                 break;
-            case 3:
-                System.out.println("Bonjour");
+            case "*":
+                System.out.println(a*b);
+                break;
+            case "/":
+                System.out.println(a/b);
+                break;
+            case "%":
+                System.out.println(a%b);
                 break;
             default:
                 System.out.println("Invalid Input");
