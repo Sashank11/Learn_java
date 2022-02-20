@@ -19,17 +19,32 @@ public class Conditions {
         //     System.out.println("Odd");
         // }
 
-        int a = sc.nextInt();
-        int b = sc.nextInt();
+        // int a = sc.nextInt();
+        // int b = sc.nextInt();
+        // sc.close();
+        // if( a == b){
+        //     System.out.println("Equal");
+        // }
+        // else if(a > b){
+        //     System.out.println("A is greater");
+        // }
+        // else{
+        //     System.out.println("B is greater");
+        // }
+        int button = sc.nextInt();
         sc.close();
-        if( a == b){
-            System.out.println("Equal");
-        }
-        else if(a > b){
-            System.out.println("A is greater");
-        }
-        else{
-            System.out.println("B is greater");
+        switch (button) {
+            case 1:
+                System.out.println("Hello");
+                break;
+            case 2:
+                System.out.println("Namaste");
+                break;
+            case 3:
+                System.out.println("Bonjour");
+                break;
+            default:
+                System.out.println("Invalid Input");
         }
     }
 }
