@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "loops",
         "intro",
-        "loops"
+        "fun"
     ]
 }
