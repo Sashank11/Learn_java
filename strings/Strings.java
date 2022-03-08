@@ -6,5 +6,9 @@ public class Strings {
         String name = sc.nextLine();
         System.out.println("Name: " + name);
 
+        String a = "abc";
+        String b = "def";
+        String c = a + b;
+        System.out.println(c);
     }
 }
