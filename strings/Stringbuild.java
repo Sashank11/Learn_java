@@ -6,7 +6,7 @@ public class Stringbuild {
         
         // sb.setCharAt(0, 'S');
         // System.out.println(sb);
-        sb.insert(0, "S");
+        sb.insert(2, "n");
         System.out.println(sb);
 
     }
