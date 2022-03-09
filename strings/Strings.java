@@ -7,11 +7,17 @@ public class Strings {
         // System.out.println("Name: " + name);
 
         String a = "abc";
-        String b = "def";
-        String c = a + b;
-        System.out.println(c.length());
-        for(int i = 0; i < c.length(); i++){
-            System.out.println(c.charAt(i));
+        String b = "fbc";
+        // String c = a + b;
+        // System.out.println(c.length());
+        // for(int i = 0; i < c.length(); i++){
+        //     System.out.println(c.charAt(i));
+        // }
+        if(a.compareTo(b) == 0){
+            System.out.println("Strings are equal");
+        }
+        else{
+            System.out.println("Strings are not equal");
         }
     }
 }
