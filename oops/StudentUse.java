@@ -13,6 +13,7 @@ public class StudentUse {
         System.out.println(s2);
         s2.name = "abc";
         s2.roll_no = 22;
+        System.out.println(s2.name + " " + s2.roll_no);
 
         sc.close();
     }
