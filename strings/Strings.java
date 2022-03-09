@@ -25,5 +25,9 @@ public class Strings {
         else{
             System.out.println("Strings are not equal");
         }
+        // substring
+        String sen = "TonyStark";
+        String name = sen.substring(4, 9);
+        System.out.println(name);
     }
 }
