@@ -12,5 +12,13 @@ public class Stringbuild {
         //delete extra n
         sb.delete(2, 4);
         System.out.println(sb);
+        System.out.println();
+        StringBuilder h = new StringBuilder("h");
+
+        h.append("e");
+        h.append("l");
+        h.append("l");
+        h.append("o");
+        System.out.println(h);
     }
 }
