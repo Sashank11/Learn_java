@@ -3,5 +3,8 @@ public class Stringbuild {
         StringBuilder sb = new StringBuilder("Tony");
         System.out.println(sb);
         System.out.println(sb.charAt(0));
+        
+        sb.setCharAt(0, 'S');
+        System.out.println(sb);
     }
 }
