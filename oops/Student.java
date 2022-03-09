@@ -1,6 +1,6 @@
 public class Student{
 
-    String name;
+    public String name;
     int roll_no;
     
 }
