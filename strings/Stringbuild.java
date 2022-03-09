@@ -15,7 +15,7 @@ public class Stringbuild {
         System.out.println();
         StringBuilder h = new StringBuilder("h");
 
-        h.append("e");
+        h.append("e"); // for normal string it would str = str + "e"
         h.append("l");
         h.append("l");
         h.append("o");
