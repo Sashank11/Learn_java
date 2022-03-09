@@ -19,6 +19,8 @@ public class Stringbuild {
         h.append("l");
         h.append("l");
         h.append("o");
-        System.out.println(h);
+        System.out.println(h.length());
+
+
     }
 }
