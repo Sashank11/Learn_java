@@ -10,7 +10,7 @@ public class Stringbuild {
         System.out.println(sb);
 
         //delete extra n
-        sb.delete(2, 3);
+        sb.delete(2, 4);
         System.out.println(sb);
     }
 }
