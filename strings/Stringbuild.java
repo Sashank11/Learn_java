@@ -21,6 +21,16 @@ public class Stringbuild {
         h.append("o");
         System.out.println(h.length());
 
+        for(int i = 0; i<h.length()/2; i++){
+            int front = i;
+            int back = h.length() - 1 - i;
 
+            char frontChar = h.charAt(front);
+            char backChar = h.charAt(back);
+            
+            h.setCharAt(front, backChar);
+            h.setCharAt(back, frontChar);
+        }
+        System.out.println(h);
     }
 }
