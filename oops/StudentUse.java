@@ -13,7 +13,6 @@ public class StudentUse {
         s2.name = "abc";
         s2.setRollNumber(101);
         System.out.println(s2.name + " " + s2.roll_no);
-
         sc.close();
     }
 }
