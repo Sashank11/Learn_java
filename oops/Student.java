@@ -7,7 +7,9 @@ public class Student{
         this.roll_no = roll_no;
     }
 
-
+    public void print(){
+        System.out.println(name + " " + roll_no);
+    }
     public void setRollNumber(int roll_no){
         if(roll_no <= 0){
             return;
