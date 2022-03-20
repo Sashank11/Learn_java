@@ -10,7 +10,7 @@ public class StudentUse {
         //s2.setRollNumber(101);
         Student s3 = new Student("Samyo");
         // System.out.println(s2.num_students);
-        System.out.println(Student.num_students);
+        System.out.println(Student.get_num_student());
 
     }
 }
