@@ -4,7 +4,7 @@ public class Student{
     final int roll_no;
     double cpgpa;
     final static double CONVERSIONFACTOR = 0.95;
-    static int num_students;
+    private static int num_students;
     public Student(String name) {
         this.name = name;
         num_students++;

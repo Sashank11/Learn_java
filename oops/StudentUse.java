@@ -8,7 +8,6 @@ public class StudentUse {
         Student s2 = new Student("Neo");
         // s2.print();
         //s2.setRollNumber(101);
-        
         Student s3 = new Student("Samyo");
         // System.out.println(s2.num_students);
         System.out.println(Student.num_students);
