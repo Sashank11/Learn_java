@@ -5,8 +5,8 @@ public class FracUse {
         // f1.setNumerator;
         // f1.getNumerator;
         Fraction f2 = new Fraction(1,2);
-        Fraction f3 = new Fraction();
-        f3.add(f1,f2);
+        Fraction f3 = Fraction.add(f1,f2);
+        // f3.add(f1,f2);
         // f1.increment();
         f3.print();
     }
