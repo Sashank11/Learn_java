@@ -19,7 +19,12 @@ public class Fraction {
         denominator = denominator/gcd;
 
     }
+
     public void print(){
         System.out.println(numerator + "/" + denominator);
+    }
+    public void increment() {
+        numerator = numerator + denominator;
+        simplify();
     }
 }

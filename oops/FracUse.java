@@ -4,6 +4,7 @@ public class FracUse {
         f1.print();
         // f1.setNumerator;
         // f1.getNumerator;
-        // f1.increment();
+        f1.increment();
+        f1.print();
     }
 }
