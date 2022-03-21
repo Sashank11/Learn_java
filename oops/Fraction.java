@@ -51,8 +51,8 @@ public class Fraction {
         simplify();
     }
     public Fraction add(Fraction f1, Fraction f2) {
-        numerator = (f1.numerator* f2.denominator) + (f2.numerator * f1.denominator);
-        denominator = f1.denominator * f2.denominator;
+        this.numerator = (f1.numerator* f2.denominator) + (f2.numerator * f1.denominator);
+        this.denominator = f1.denominator * f2.denominator;
         simplify();
         return (new Fraction(numerator, denominator));
     }
