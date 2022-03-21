@@ -23,6 +23,21 @@ public class Fraction {
         denominator = denominator/gcd;
 
     }
+    public void setNumerator(int num){
+        this.numerator = num;
+    }
+    public int getNumerator(){
+        return numerator;
+    }
+    public void setDenominator(int num){
+        if(num == 0){
+            return;
+        }
+        this.denominator = num;
+    }
+    public int getDenominator(){
+        return denominator;
+    }
     public void print(){
         System.out.println(numerator + "/" + denominator);
     }
