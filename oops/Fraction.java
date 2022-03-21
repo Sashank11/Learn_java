@@ -3,6 +3,9 @@ public class Fraction {
     private int denominator;
 
     public Fraction(int numerator, int denominator) {
+        if (denominator == 0){
+            denominator = 1;
+        }
         this.numerator = numerator;
         this.denominator = denominator;
         simplify();
