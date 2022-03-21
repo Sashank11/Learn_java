@@ -25,6 +25,7 @@ public class Fraction {
     }
     public void setNumerator(int num){
         this.numerator = num;
+        simplify();
     }
     public int getNumerator(){
         return numerator;
@@ -34,6 +35,7 @@ public class Fraction {
             return;
         }
         this.denominator = num;
+        simplify();
     }
     public int getDenominator(){
         return denominator;
