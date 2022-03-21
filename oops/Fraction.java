@@ -7,6 +7,10 @@ public class Fraction {
         this.denominator = denominator;
         simplify();
     }
+    public Fraction(){
+        numerator =1;
+        denominator =1;
+    }
     private void simplify() {
         int gcd = 1;
         int smaller = Math.min(numerator, denominator);
@@ -19,12 +23,17 @@ public class Fraction {
         denominator = denominator/gcd;
 
     }
-
     public void print(){
         System.out.println(numerator + "/" + denominator);
     }
     public void increment() {
         numerator = numerator + denominator;
         simplify();
+    }
+    public Fraction add(Fraction f1, Fraction f2) {
+        numerator = (f1.numerator* f2.denominator) + (f2.numerator * f1.denominator);
+        denominator = f1.denominator * f2.denominator;
+        simplify();
+        return (new Fraction(numerator, denominator));
     }
 }
