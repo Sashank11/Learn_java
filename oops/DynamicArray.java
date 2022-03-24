@@ -18,4 +18,15 @@ public class DynamicArray {
         }
         return data[i];
     }
+
+    public void add(int elem){
+        if(nextElementIndex == data.length){
+            doubleCapacity();
+        }
+        data[nextElementIndex] = elem;
+        nextElementIndex++;
+    }
+    private void doubleCapacity() {
+        
+    }
 }
