@@ -18,7 +18,12 @@ public class DynamicArray {
         }
         return data[i];
     }
-
+    public void set(int i, int elem){
+        if(i>= nextElementIndex){
+            return;
+        }
+        data[i] = elem;
+    }
     public void add(int elem){
         if(nextElementIndex == data.length){
             doubleCapacity();
