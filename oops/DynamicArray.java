@@ -38,4 +38,13 @@ public class DynamicArray {
             data[i] = temp[i];
         }
     }
+    public int removeLast(){
+        if(nextElementIndex == 0){
+            return -1;
+        }
+        int temp = data[nextElementIndex - 1];
+        data[nextElementIndex - 1] = 0;
+        nextElementIndex--;
+        return temp;
+    }
 }
