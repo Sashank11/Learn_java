@@ -1,14 +1,19 @@
-class Test{
-    static int marks;
-    void set_marks(int marks)
-    {
-        this.marks=marks;               //Line 1 gives warning not error
+import java.util.*;
+import java.lang.*;
+class Prac{
+    public static void main(String[] args) {
+        // x and y  string/number ->if string -> error || x/y if y is == 0 ->error ;
+        Scanner sc = new Scanner(System.in);
+        try{
+            int x = sc.nextInt();
+            int y = sc.nextInt();
+            if( y == 0 ){
+                throw new  RuntimeException(); // hera exception haru keke huncha yo part le test case fail bhayo
+            }
+        }
+        catch(Exception e){
+            System.out.println(e);
+        }
+
+        }
     }
-}
-class Prac {
-    public static void main (String[] args) {
-        Test t=new Test();              
-        t.set_marks(78);                //Line 2
-        System.out.print(Test.marks);   //Line 3
-    }
-}

@@ -1,11 +1,11 @@
 {
     "java.project.sourcePaths": [
+        "strings",
+        "oops",
         "loops",
         "intro",
         "fun",
         "arrays",
-        "strings",
-        "oops",
-        "temp"
+        "prac"
     ]
 }
