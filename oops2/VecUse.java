@@ -7,5 +7,8 @@ public class VecUse {
         Car c = new Car();
         c.color = "Black";
         c.print();
+
+        Bicycle b = new Bicycle();
+        b.print();
     }
 }
