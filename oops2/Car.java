@@ -1,5 +1,5 @@
-public class Car {
+public class Car extends Vec {
 
-    
+    int numDoors;
 
 }
