@@ -4,7 +4,7 @@ public class Vec {
     int maxSpeed;
 
     public void print(){
-        System.out.println("Vehicle " + "Color " + color + " speed " + maxSpeed);
+        System.out.println("Vehicle " + " Color " + color + " speed " + maxSpeed);
     }
     
 }
