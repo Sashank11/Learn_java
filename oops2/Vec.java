@@ -3,6 +3,10 @@ public class Vec {
     private String color;
     int maxSpeed;
 
+    public Vec(){
+        System.out.println("vec constructor");
+    }
+
     public String getColor(){
         return color;
     }
