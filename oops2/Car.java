@@ -13,3 +13,4 @@ public class Car extends Vec {
     }
 
 }
+// Object class it the super class in java anything can be taken from it. llike say Object v = new Vec();
