@@ -1,4 +1,4 @@
-public class Strings {
+public class Stin {
     public static String replaceChar(String s, char a, char b){
         if(s.length() == 0){
             return s;
