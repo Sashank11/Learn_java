@@ -1,7 +1,8 @@
 public class VecUse {
     public static void main(String[] args){
 
-        Vec v = new Vec();
+        // Vec v = new Vec();
+        Vec v;
         Car c = new Car();
         // Vec v = new Vec();
         // v.setColor("Red");
