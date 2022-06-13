@@ -4,6 +4,9 @@ public class VecUse {
         // Vec v = new Vec();
         Vec v;
         Car c = new Car();
+        v = new Car();
+        v.print();
+        v.isMotorized();
         // Vec v = new Vec();
         // v.setColor("Red");
         // v.print();
