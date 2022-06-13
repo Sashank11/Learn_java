@@ -1,4 +1,4 @@
-public class Vec {
+public  abstract class Vec {
 
     private String color;
     int maxSpeed;
@@ -18,4 +18,5 @@ public class Vec {
         System.out.println("Vehicle " + " Color " + color + " speed " + maxSpeed); //private will not allow Vec access
     }
     
+    public abstract boolean isMotorized();
 }
