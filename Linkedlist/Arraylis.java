@@ -5,6 +5,8 @@ public class Arraylis {
         arr.add(10);
         arr.add(20);
         arr.add(30);
+        arr.add(2,25);
         System.out.println(arr.size());
+        System.out.println(arr.get(3));
     }
 }
