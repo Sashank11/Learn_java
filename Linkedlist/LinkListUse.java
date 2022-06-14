@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class LinkListUse {
 
     public static Node<Integer> createLinkedList(){
@@ -19,8 +21,26 @@ public class LinkListUse {
         }
         System.out.print("null");
     }
+    public static Node<Integer> takeInput(){
+        Scanner s = new Scanner(System.in);
+        int data = s.nextInt();
+        Node<Integer> head = null, tail = null;
+        while(data != -1){
+            Node<Integer> current = new Node<Integer>(data);
+            if(head == null){
+                head = current;
+                tail = current;
+            }
+            else{
+                tail.next = current;
+                tail = current;
+            }
+            data = s.nextInt();
+        }
+        return head;
+    }
     public static void main(String[] args) {
-        Node<Integer> head = createLinkedList();
+        Node<Integer> head = takeInput();
         print(head);
         // Node<Integer> n1 = new Node<>(10);
         // System.out.println(n1.data);
