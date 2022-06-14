@@ -1,7 +1,7 @@
-public class Node{
-        int data;
-        Node next;  // In java by default its null
-        Node(int data){
+public class Node<T>{
+        T data;
+        Node<T> next;  // In java by default its null
+        Node(T data){
             this.data = data;
         }
 
