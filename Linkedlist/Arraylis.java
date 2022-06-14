@@ -7,8 +7,11 @@ public class Arraylis {
         arr.add(30);
         arr.add(2,25);
         System.out.println(arr.size());
-        Integer i = 10;
-        arr.remove(i);
-        System.out.println(arr.get(3));
+        // Integer i = 10;
+        // arr.remove(i);
+        for(int i = 0; i <arr.size(); i++){
+            System.out.println(arr.get(i));
+        }
+        // System.out.println(arr.get(3));
     }
 }
