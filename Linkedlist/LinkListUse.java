@@ -39,6 +39,28 @@ public class LinkListUse {
         }
         return head;
     }
+	public static LinkedListNode<Integer> insert(LinkedListNode<Integer> head,int posn,int data){
+		
+		LinkedListNode<Integer> newNode=new LinkedListNode<Integer>(data);
+		
+		if(posn>LengthOfLL.lengthOfLinkedList(head)) {
+			return head;
+		}
+		if(posn==0) {
+			newNode.next=head;
+			return newNode;
+		}
+		LinkedListNode<Integer> prev=null,curr=head;
+		int i=1;
+		while(i<=posn) {
+			prev=curr;
+			curr=curr.next;
+			i++;
+		}
+		prev.next=newNode;
+		newNode.next=curr;
+		return head;
+	}
     public static void main(String[] args) {
         Node<Integer> head = takeInput();
         print(head);
