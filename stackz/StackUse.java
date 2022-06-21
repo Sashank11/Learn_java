@@ -6,6 +6,6 @@ public class StackUse {
         System.out.println(stack.top());
         stack.pop();
         stack.size();
-        stack.isEmpty();
+        System.out.println(stack.isEmpty());
     }
 }
