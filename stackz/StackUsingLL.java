@@ -16,9 +16,9 @@ public class StackUsingLL<T> {
 
     public void push(T elem){
         Node<T> curr = new Node<>(elem);
-         curr.next = head;
-         head = curr;
-         size++;
+        curr.next = head;
+        head = curr;
+        size++;
         // if(head == null){
         //     head = (Node<T>) elem;
         //     size++;
