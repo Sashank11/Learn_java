@@ -3,7 +3,7 @@ public class StackUse {
         
         StackUsingArray stack = new StackUsingArray();
         stack.push(10);
-        stack.top();
+        System.out.println(stack.top());
         stack.pop();
         stack.size();
         stack.isEmpty();
