@@ -4,7 +4,7 @@ public class StackUsingArray{
     private int topIndex; // index of top most element of the stack
 
     public StackUsingArray(){
-        data = new int[10];
+        data = new int[2];
         topIndex = -1;
     }
     public StackUsingArray(int size){
@@ -22,11 +22,17 @@ public class StackUsingArray{
     public void push(int elem){
         // if stack is full
         if(topIndex == data.length-1){
-            Exception e = new Exception("stack is full");
-            System.out.println(e);
+            doubleCapacity();
         }
         topIndex++;
         data[topIndex] = elem;
+    }
+    private void doubleCapacity() {
+        int temp[] = data;
+        data = new int[2* temp.length];
+        for(int i =0; i <temp.length; i++){
+            data[i] = temp[i];
+        }
     }
     public int top(){
         if(topIndex == -1){

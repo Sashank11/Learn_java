@@ -3,9 +3,12 @@ public class StackUse {
         
         StackUsingArray stack = new StackUsingArray();
         stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
         System.out.println(stack.top());
         stack.pop();
-        stack.size();
+        System.out.println(stack.size());
         System.out.println(stack.isEmpty());
     }
 }
