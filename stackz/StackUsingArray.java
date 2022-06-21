@@ -7,7 +7,10 @@ public class StackUsingArray{
         data = new int[10];
         topIndex = -1;
     }
-
+    public StackUsingArray(int size){
+        data = new int[size];
+        topIndex = -1;
+    }
     public int size(){
         return topIndex + 1;
     }
