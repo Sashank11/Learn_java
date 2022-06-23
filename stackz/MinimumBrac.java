@@ -30,7 +30,7 @@ public class MinimumBrac {
                 count++;
             }
             else{
-                count+=2; //
+                count+=2; // have to reverse both brackets thats why + 2
             }
         }
         return count;
