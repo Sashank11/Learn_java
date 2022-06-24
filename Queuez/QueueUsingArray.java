@@ -48,6 +48,9 @@ public class QueueUsingArray {
     public int dequeue(){
         int temp = data[front];
         front++;
+        if(front == data.length){
+            front = 0;
+        }
         size--;
         if(size == 0){
             front = -1;
