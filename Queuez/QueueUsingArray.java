@@ -31,8 +31,8 @@ public class QueueUsingArray {
         else{
             rear++;
             if(rear == data.length){
-                rear = 0;
-            }
+                rear = 0;  
+            } // line 32-34 can be written as: rear = (rear + 1) % data.length
             data[rear] = elem;
         }
         size++;
@@ -47,10 +47,11 @@ public class QueueUsingArray {
 
     public int dequeue(){
         int temp = data[front];
-        front++;
-        if(front == data.length){
-            front = 0;
-        }
+        // front++;
+        // if(front == data.length){
+        //     front = 0;
+        // }
+        front = (front + 1) % data.length;
         size--;
         if(size == 0){
             front = -1;
