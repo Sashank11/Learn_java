@@ -15,5 +15,45 @@ public class QueueUsingArray {
         rear = -1;
     }
 
-    
+    public int size(){
+        return size;
+    }
+    public boolean isEmpty(){
+        return size == 0;
+    }
+
+    public void enqueue(int elem){
+        if(front == -1){
+            front++;
+            rear++;
+            data[front] = elem;
+        }
+        else{
+            rear++;
+            if(rear == data.length){
+                rear = 0;
+            }
+            data[rear] = elem;
+        }
+        size++;
+    }
+
+    public int front(){
+        if(size == 0){
+            return -1;
+        }
+        return data[front];
+    }
+
+    public int dequeue(){
+        int temp = data[front];
+        front++;
+        size--;
+        if(size == 0){
+            front = -1;
+            rear = -1;
+        }
+        return temp;
+
+    }
 }
