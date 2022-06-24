@@ -10,21 +10,42 @@ public class QueueUsingLL<T> {
     }
 
     public int size(){
-
+        return size;
     }
 
     public boolean isEmpty(){
-
+        return size == 0;
     }
     public void enqueue(T elem){
-
+        Node<T> newNode = new Node<>(elem);
+        size++;
+        if(rear == null){
+            front = newNode;
+            rear = newNode;
+        }
+        else{
+        rear.next = newNode;
+        rear = newNode;
+        }
     }
-    public T front(){
-
+    public T front() throws QueueEmptyException{
+        if(front == null){
+            throw new QueueEmptyException();
+        }
+        return front.data;
     }
 
-    public T dequeue(){
-
+    public T dequeue() throws QueueEmptyException{
+        if(front == null){
+            throw new QueueEmptyException();
+        }
+        T temp = front.data;
+        front = front.next;
+        if(front.next == null){
+            rear = null;
+        }
+        size--;
+        return temp;
     }
 
 }
